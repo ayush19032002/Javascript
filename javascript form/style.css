@@ -1,0 +1,28 @@
+form {
+    background-color: lightgreen;
+    color: black;
+    font-weight: bold;
+}
+
+.abc1 {
+    text-align: center;
+}
+
+div {
+
+    padding: 10px;
+    margin: 4px;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: black;
+    color: white;
+    width: 530px;
+}
