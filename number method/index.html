@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>number method</title>
+</head>
+
+<body>
+
+    <h1>number method </h1>
+    <input type="text" name="num" id="num2" />
+    <button onclick="demo2()">Click </button>
+
+    <script>
+
+        let number = 1234.56789
+
+        function demo2() {
+            let input = document.getElementById("num2").value;
+            console.log(typeof input);
+
+            let converted = parseInt(input);
+            console.log(typeof converted);
+
+            let fixed = number.toFixed(4);
+            console.log(fixed);
+
+            let precised = number.toPrecision(4);
+            console.log(precised);
+
+            if (converted > 6) {
+                console.log("number is valid");
+            }
+            else {
+                console.log("number is invalid");
+            }
+
+            switch (new Date().getMinutes()) {
+                case 51: {
+                    console.log("minute is valid");
+                }
+                    break;
+
+                case 52: {
+                    console.log("minute is valid");
+                }
+
+                default: {
+                    console.log("minute is invalid");
+                }
+            }
+
+        }
+    </script>
+</body>
+
+</html>

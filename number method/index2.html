@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>practice</title>
+</head>
+
+<body>
+
+    <h1>number method</h1>
+    <input type="text" id="num1" name="text" />
+    <button onclick="demo2()">click</button>
+    <script>
+        let number = 123456.78901;
+
+        function demo2() {
+
+            let input = document.getElementById("num1").value;
+            console.log(typeof input);
+
+            let fixed = number.toFixed(3);
+            console.log(fixed);
+
+            let convert = parseInt(input);
+            console.log(typeof convert);
+
+            let precised = number.toPrecision(6);
+            console.log(precised);
+
+            if (convert > 7) {
+                console.log("number is valid");
+            }
+            else {
+                console.log("number is invalid")
+            }
+            switch (new Date().getMinutes()) {
+                case 1: {
+                    console.log("minute is valid");
+                }
+                    break;
+                case 2: {
+                    console.log("minute is valid");
+                }
+                    break;
+                case 3: {
+                    console.log("minute is valid");
+                }
+                    break;
+                case 4: {
+                    console.log("minute is valid");
+                }
+                break;
+                default : {
+                    console.log("minute is invalid");
+                }
+
+
+            }
+        }
+    </script>
+</body>
+
+</html>
