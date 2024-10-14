@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>form</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="container">
+        <div name="contactForm" onsubmit="return validateForm()" action="" method="post">
+            <h2>Application Form</h2>
+            <div class="row">
+                <label for="fullname">Full name:</label>
+                <input type="text" name="name" class="error" id="nameErr" required>
+            </div>
+            <div class="row">
+                <label for="email">Email address:</label>
+                <input type="text" name="email" class="error" id="emailErr" autocomplete>
+            </div>
+            <div class="row">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="passwordErr" maxlength="10">
+            </div>
+            <div class="row">
+                <label for="Mobile number">Mobile number :</label>
+                <input type="tel" name="mobile" class="error" id="mobileErr" maxlength="10" required>
+            </div>
+            <div class="row">
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" name="birthdate" class="error" id="birthdateErr" required>
+            </div>
+            <div class="row">
+                <label for="city">Country:</label>
+                <select name="country" class="error" id="countryErr" required>
+                    <option>Select</option>
+                    <option>Australia</option>
+                    <option>India</option>
+                    <option>United States</option>
+                    <option>United Kingdom</option>
+                </select>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit" onclick="validateForm()">
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="cd-title">Search Table Record:</h2>
+    <input type="text" id="myInput" placeholder="Search for names..">
+    <button onclick="handlesearch()">Search</button>
+    <p><button onclick="sortTable()">Sort</button></p>
+
+    <table border id="employee-table">
+        <thead>
+            <tr class="header">
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Phone</th>
+                <th>Birthdate</th>
+                <th>Country</th>
+                <th>Action</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+
+        </tbody>
+    </table>
+    <script src="style1.js"></script>
+
+
+</body>
+
+</html>
