@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search Table Record</title>
+</head>
+<style>
+    #myInput {
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+    }
+
+    #myTable {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #myTable th,
+    td {
+        text-align: left;
+        padding: 12px;
+    }
+</style>
+
+<body>
+    <section class="container cd-table-container">
+        <h2 class="cd-title">Search Table Record:</h2>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+        <table id="myTable">
+            <thead>
+                <tr class="header">
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ayush</td>
+                    <td>ayushrajdev2@gmail.com</td>
+                    <td>6359408440</td>
+                    <td>4545362</td>
+                </tr>
+                <tr>
+                    <td>Om</td>
+                    <td>om@gmail.com</td>
+                    <td>9957240884</td>
+                    <td>6689065</td>
+                </tr>
+                <tr>
+                    <td>Jay</td>
+                    <td>jay@gmail.com</td>
+                    <td>6559608440</td>
+                    <td>9089087</td>
+                </tr>
+                <tr>
+                    <td>Ayushi</td>
+                    <td>ayushi2@gmail.com</td>
+                    <td>6359408440</td>
+                    <td>4545364</td>
+                </tr>
+                <tr>
+                    <td>Pratham</td>
+                    <td>pratham@gmail.com</td>
+                    <td>6359408440</td>
+                    <td>4545369</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <script src="style.js"></script>
+</body>
+
+</html>
